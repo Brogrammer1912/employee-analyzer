@@ -139,18 +139,17 @@ class OrganizationAnalyzerTest {
 
         buildChain(ceo, b1l1, b1l2, b1l3, b1l4, b1l5);
 
-        // Branch 2 - also too long (6 levels)
+        // Branch 2 - also too long (5 levels)
         Employee b2l1 = new Employee("7", "B2L1", "Manager", 80000, "1");
         Employee b2l2 = new Employee("8", "B2L2", "Manager", 70000, "7");
         Employee b2l3 = new Employee("9", "B2L3", "Manager", 60000, "8");
         Employee b2l4 = new Employee("10", "B2L4", "Manager", 55000, "9");
-        Employee b2l5 = new Employee("11", "B2L5", "Manager", 52000, "10");
-        Employee b2l6 = new Employee("12", "B2L6", "Employee", 50000, "11");
+        Employee b2l5 = new Employee("11", "B2L5", "Employee", 52000, "10");
 
-        buildChain(ceo, b2l1, b2l2, b2l3, b2l4, b2l5, b2l6);
+        buildChain(ceo, b2l1, b2l2, b2l3, b2l4, b2l5);
 
         List<Employee> employees = List.of(ceo, b1l1, b1l2, b1l3, b1l4, b1l5,
-                b2l1, b2l2, b2l3, b2l4, b2l5, b2l6);
+                b2l1, b2l2, b2l3, b2l4, b2l5);
         List<ReportingLineResult> results = analyzer.analyzeReportingLines(employees);
 
         assertEquals(2, results.size());
