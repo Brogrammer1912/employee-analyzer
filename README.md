@@ -49,6 +49,10 @@ END OF REPORT
 Process finished with exit code 0
 ```
 
+## Code Coverage
+
+![img_1.png](img_1.png)
+
 ## Project Structure
 
 ```
