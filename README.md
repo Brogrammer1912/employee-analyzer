@@ -52,7 +52,7 @@ employee-analyzer/
 
 ```bash
 # Clone the repository
-git clone <your-repository-url>
+git clone https://github.com/Brogrammer1912/employee-analyzer
 cd employee-analyzer
 
 # Build the project
