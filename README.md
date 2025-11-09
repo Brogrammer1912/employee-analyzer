@@ -14,6 +14,41 @@ This application reads employee data from a CSV file and performs the following 
 - Java SE 17 or higher
 - Maven 3.6 or higher
 
+## Sample Output
+![img.png](img.png)
+```text
+=================================================================
+No CSV file specified. Using sample data (employees-extended.csv)
+=================================================================
+
+Usage: java -jar employee-analyzer.jar <path-to-csv-file>
+Example: java -jar employee-analyzer.jar employees.csv
+
+========================================
+ORGANIZATIONAL STRUCTURE ANALYSIS REPORT
+========================================
+
+SALARY COMPLIANCE ANALYSIS
+------------------------------------------
+Managers earning LESS than they should:
+
+        • Martin Chekov
+Current salary: $45000.00
+Should earn at least: $60000.00
+Underpaid by: $15000.00
+
+
+REPORTING LINE ANALYSIS
+------------------------------------------
+        ✓ All employees have acceptable reporting lines (≤ 4 managers).
+
+========================================
+END OF REPORT
+========================================
+
+Process finished with exit code 0
+```
+
 ## Project Structure
 
 ```
